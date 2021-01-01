@@ -16,7 +16,7 @@ const config = {
 let audio = null;
 
 window.onload= function() {
-  audio = new Audio('./forest.mp3');
+  audio = new Audio('res/forest.mp3');
 };
 
 document.addEventListener('DOMContentLoaded', e => {
