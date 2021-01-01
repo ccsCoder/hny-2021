@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Satisfy', cursive;
+}
+
+.intro-background {
+  background-color: black;
+  opacity: .95;
+  z-index: 5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .3s ease-out;
+}
+
+.intro-background > button  {
+  background-color: tomato;
+  font-family: 'Satisfy', cursive;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  width: 200px;
+  font-size: 2rem;
+  border: 1px solid tomato;
+  cursor: pointer;
+}
+
+.intro-background > h1 {
+  position: fixed;
+  font-size: 1.5rem;
+  opacity: .7;
+  bottom: 16px;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../res/back.jpg');
+  background-size: cover;
+}
+
+.greeting {
+  position: fixed;
+  font-size: 1.3rem;
+  margin: 8px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.main-greeting {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+
+.secondary-greeting {
+  bottom: 8px;
+  right: 0;
+  opacity: .7;
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .background {
+    background-image: url('../res/back-mobile.jpg');
+  }
+  .main-greeting {
+    font-size: 3rem;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .background {
+    background-image: url('../res/back-mobile.jpg');
+  }
+
+  .main-greeting {
+    font-size: 3rem;
+  }
+}
