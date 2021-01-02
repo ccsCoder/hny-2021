@@ -47,4 +47,6 @@ document.addEventListener('DOMContentLoaded', e => {
 
 });
 
-function isAudioPlaying(audioTrack) { return !audioTrack.paused; }
+function isAudioPlaying(audioTrack) {
+  return !audioTrack.paused; 
+}
