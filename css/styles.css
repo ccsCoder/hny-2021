@@ -73,6 +73,16 @@ html, body {
   opacity: .7;
 }
 
+.mute-audio {
+  position: fixed;
+  font-size: 1.3rem;
+  margin: 8px;
+  color: white;
+  bottom: 10%;
+  cursor: pointer;
+  right: 5%;
+}
+
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
