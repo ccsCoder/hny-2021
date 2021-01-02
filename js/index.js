@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', e => {
   });
 
   document.querySelector('.mute-audio').addEventListener('click', e => {
-     var element = document.querySelector('.mute-audio');
+    // mute/unmute toggle
+    var element = document.querySelector('.mute-audio');
     if(isAudioPlaying(audio)) {
       audio.pause();
       element.textContent = "Unmute"      
