@@ -73,6 +73,22 @@ html, body {
   opacity: .7;
 }
 
+.mute-unmute-toggle {
+  font-family: 'Arial Black';
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer; 
+  overflow: hidden;
+  outline:none;
+  position: fixed;
+  font-size: 1.3rem;
+  color: white;
+  bottom: 10%;
+  cursor: pointer;
+  right: 5%;
+}
+
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px

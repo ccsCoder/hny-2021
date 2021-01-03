@@ -33,3 +33,16 @@ document.addEventListener('DOMContentLoaded', e => {
     Particles.init(config);
   });
 });
+
+function toggleAudio() {
+    // mute/unmute toggle
+    let element = document.querySelector('.mute-unmute-toggle');
+    if(audio.paused) {
+      audio.play();
+      element.textContent = "Mute"            
+    } else {
+      audio.pause();
+      element.textContent = "Unmute"      
+    }
+
+}
