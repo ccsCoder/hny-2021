@@ -32,21 +32,17 @@ document.addEventListener('DOMContentLoaded', e => {
     document.querySelector('.intro-background').addEventListener('transitionend', function() {this.style.display = 'none';});
     Particles.init(config);
   });
-
-  document.querySelector('.mute-audio').addEventListener('click', e => {
-    // mute/unmute toggle
-    var element = document.querySelector('.mute-audio');
-    if(isAudioPlaying(audio)) {
-      audio.pause();
-      element.textContent = "Unmute"      
-    } else {
-      audio.play();
-      element.textContent = "Mute"            
-    }
-  });  
-
 });
 
-function isAudioPlaying(audioTrack) {
-  return !audioTrack.paused; 
+function toggleAudio() {
+    // mute/unmute toggle
+    let element = document.querySelector('.mute-unmute-toggle');
+    if(audio.paused) {
+      audio.play();
+      element.textContent = "Mute"            
+    } else {
+      audio.pause();
+      element.textContent = "Unmute"      
+    }
+
 }

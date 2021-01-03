@@ -73,10 +73,16 @@ html, body {
   opacity: .7;
 }
 
-.mute-audio {
+.mute-unmute-toggle {
+  font-family: 'Arial Black';
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer; 
+  overflow: hidden;
+  outline:none;
   position: fixed;
   font-size: 1.3rem;
-  margin: 8px;
   color: white;
   bottom: 10%;
   cursor: pointer;
